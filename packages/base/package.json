@@ -7,6 +7,6 @@
   "author": "a10n2",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": ">= 7"
   }
 }
