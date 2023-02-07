@@ -1,0 +1,12 @@
+{
+  "name": "@a10n2/eslint-config-base",
+  "version": "0.0.1",
+  "description": "basic eslint config",
+  "main": "index.js",
+  "keywords": [],
+  "author": "a10n2",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 8"
+  }
+}
