@@ -1,0 +1,13 @@
+{
+  "name": "base",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@a10n2/eslint-config-base": "workspace:*",
+    "eslint": "^8.33.0"
+  }
+}
