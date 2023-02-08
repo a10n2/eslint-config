@@ -1,0 +1,16 @@
+{
+  "name": "@a10n2/eslint-config-typescript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "a10n2",
+  "license": "MIT",
+  "dependencies": {
+    "@a10n2/eslint-config-base": "workspace:*"
+  },
+  "peerDependencies": {
+    "@a10n2/eslint-config-base": "workspace:*",
+    "eslint": ">= 7"
+  }
+}

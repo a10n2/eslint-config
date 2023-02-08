@@ -2,6 +2,15 @@ lockfileVersion: 5.4
 
 importers:
 
+  packages/base:
+    specifiers: {}
+
+  packages/ts:
+    specifiers:
+      '@a10n2/eslint-config-base': workspace:*
+    dependencies:
+      '@a10n2/eslint-config-base': link:../base
+
   playground/base:
     specifiers:
       '@a10n2/eslint-config-base': workspace:*
