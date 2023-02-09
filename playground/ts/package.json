@@ -1,0 +1,13 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@a10n2/eslint-config-typescript": "workspace:*",
+    "eslint": "^8.33.0"
+  }
+}
