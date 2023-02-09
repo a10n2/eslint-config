@@ -1,9 +1,13 @@
 {
   "name": "@a10n2/eslint-config-typescript",
   "version": "0.0.1",
-  "description": "",
+  "description": "Eslint config of Typescript",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslint config",
+    "typescript"
+  ],
   "author": "a10n2",
   "license": "MIT",
   "dependencies": {
