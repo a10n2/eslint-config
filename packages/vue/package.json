@@ -1,0 +1,13 @@
+{
+  "name": "@a10n2/eslint-config-vue",
+  "version": "0.0.1",
+  "description": "Esling config of Vue",
+  "main": "index.js",
+  "keywords": [
+    "esling", 
+    "eslint config", 
+    "vue"
+  ],
+  "author": "a10n2",
+  "license": "MIT"
+}
