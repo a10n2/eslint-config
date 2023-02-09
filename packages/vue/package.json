@@ -4,10 +4,20 @@
   "description": "Esling config of Vue",
   "main": "index.js",
   "keywords": [
-    "esling", 
-    "eslint config", 
+    "esling",
+    "eslint config",
     "vue"
   ],
   "author": "a10n2",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "@a10n2/eslint-config-typescript": "workspace:*"
+  },
+  "devDependencies": {
+    "@a10n2/eslint-config-typescript": "workspace:*",
+    "eslint": "^8.33.0",
+    "eslint-plugin-vue": "^9.9.0"
+  }
 }
