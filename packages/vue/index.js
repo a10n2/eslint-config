@@ -6,6 +6,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    extraFileExtensions: '.vue',
   },
   rules: {},
 }
