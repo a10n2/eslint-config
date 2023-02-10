@@ -61,7 +61,10 @@ importers:
 
   playground/vue:
     specifiers:
+      '@a10n2/eslint-config-vue': workspace:*
       '@vitejs/plugin-vue': ^4.0.0
+      eslint: ^8.33.0
+      eslint-plugin-vue: ^9.9.0
       typescript: ^4.9.3
       vite: ^4.1.0
       vue: ^3.2.45
@@ -69,7 +72,10 @@ importers:
     dependencies:
       vue: 3.2.47
     devDependencies:
+      '@a10n2/eslint-config-vue': link:../../packages/vue
       '@vitejs/plugin-vue': 4.0.0_vite@4.1.1+vue@3.2.47
+      eslint: 8.33.0
+      eslint-plugin-vue: 9.9.0_eslint@8.33.0
       typescript: 4.9.5
       vite: 4.1.1
       vue-tsc: 1.0.24_typescript@4.9.5
