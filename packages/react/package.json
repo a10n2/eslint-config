@@ -1,0 +1,24 @@
+{
+  "name": "react",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslint config",
+    "react"
+  ],
+  "author": "a10n2",
+  "license": "MIT",
+  "peerDependencies": {
+    "@a10n2/eslint-config-typescript": "workspace:*",
+    "eslint": ">= 7"
+  },
+  "devDependencies": {
+    "@a10n2/eslint-config-typescript": "workspace:*",
+    "eslint": "^8.33.0"
+  },
+  "dependencies": {
+    "eslint-plugin-react": "^7.32.2"
+  }
+}
