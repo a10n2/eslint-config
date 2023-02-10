@@ -15,6 +15,7 @@ module.exports = {
       { default: ['signature', 'method', 'constructor', 'field'] },
     ],
     '@typescript-eslint/no-duplicate-enum-values': 'error',
-    '@typescript-eslint/no-import-type-side-effects': 'error',
+    // off
+    '@typescript-eslint/no-unsafe-argument': 'off',
   },
 }
