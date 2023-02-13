@@ -15,6 +15,7 @@ module.exports = {
     'no-unused-vars': 'warn',
     'default-case': 'warn',
     'no-alert': 'warn',
+    'arrow-body-style': ['warn', 'as-needed'],
     // error
     eqeqeq: 'error',
     'no-eval': 'error',
@@ -23,7 +24,6 @@ module.exports = {
     'no-duplicate-imports': 'error',
     'no-use-before-define': 'error',
     'default-case-last': 'error',
-    'arrow-body-style': ['error', 'never'],
     // style warn
     'block-spacing': ['error', 'always'],
     'func-call-spacing': ['error', 'never'],
