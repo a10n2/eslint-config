@@ -1,0 +1,29 @@
+{
+  "name": "@a10n2/eslint-config",
+  "version": "0.0.0",
+  "description": "personal eslint config",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "release": "node ./scripts/release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a10n2/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint config"
+  ],
+  "author": "a10n2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a10n2/eslint-config/issues"
+  },
+  "homepage": "https://github.com/a10n2/eslint-config#readme",
+  "devDependencies": {
+    "chalk": "^5.2.0",
+    "execa": "^7.0.0",
+    "prompts": "^2.4.2"
+  }
+}
