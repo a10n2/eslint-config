@@ -100,14 +100,14 @@ async function main() {
   updateVersion(path.resolve(cwd, 'package.json'), version)
 
   // handle git
-  handleGitOperation().catch(err => console.log(err))
+  await handleGitOperation().catch(err => console.log(err))
 
   // handle publish package to npm
   const publishquene = pkgs.map(pkg =>
     handlePublish(path.resolve(cwd, 'packages', pkg), pkg)
   )
 
-  Promise.all(publishquene)
+  await Promise.all(publishquene)
 }
 
 main().catch(err => console.log(err))
