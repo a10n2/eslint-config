@@ -11,9 +11,6 @@ const success = (...args) => console.log(chalk.green(...args))
 
 let newVersion = ''
 
-const runCommand = async (command, args, cwd = process.cwd()) =>
-  await execa(command, args, { cwd, stdio: 'ignore' })
-
 const questions = [
   {
     type: 'select',
@@ -55,22 +52,34 @@ function updateVersion(packageJsonPath, versionType) {
 async function handleGitOperation() {
   // push change file origin
   info('\n保存更改，推送远端中 ...')
-  await runCommand('git', ['add', '-A'])
-  await runCommand('git', ['commit', '-m', `release: v${newVersion}`])
-  await runCommand('git', ['push'])
+  await execa('git', ['add', '-A'], { cwd })
+  await execa('git', ['commit', '-m', `release: v${newVersion}`], { cwd })
+  await execa('git', ['push', 'origin'], { cwd })
   success('\n推送更改远端完成')
 
   info('\n创建版本tag中 ...')
-  await runCommand('git', ['tag', `v${newVersion}`])
+  await execa('git', ['tag', `v${newVersion}`], { cwd })
   success(`\n版本tag创建完毕，版本号为: v${newVersion}`)
   info('\n推送tag远端中 ...')
-  await runCommand('git', ['push', '--tags'])
+  await execa('git', ['push', 'origin', '--tags'], { cwd })
   success('\ntag推送远端完成')
 }
 
 async function handlePublish(executePath, pkg) {
   info(`\n推送${pkg}到npm中...`)
-  await runCommand('npm', ['publish', '--access', 'public'], executePath)
+  await execa(
+    'npm',
+    [
+      'publish',
+      '--access',
+      'public',
+      '--registry',
+      'https://registry.npmjs.org/',
+    ],
+    {
+      cwd: executePath,
+    }
+  )
   success(`\n推送${pkg}到npm成功`)
 }
 
