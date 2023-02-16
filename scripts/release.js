@@ -68,7 +68,7 @@ async function handleGitOperation() {
 async function handlePublish(executePath, pkg) {
   info(`\n推送${pkg}到npm中...`)
   await execa(
-    'npm',
+    'pnpm',
     [
       'publish',
       '--access',
