@@ -10,8 +10,7 @@
   ],
   "author": "a10n2",
   "license": "MIT",
-  "peerDependencies": {
-    "eslint": "^8.33.0",
+  "dependencies": {
     "eslint-plugin-vue": "^9.9.0",
     "@a10n2/eslint-config-typescript": "workspace:*"
   },
@@ -19,5 +18,8 @@
     "@a10n2/eslint-config-typescript": "workspace:*",
     "eslint": "^8.33.0",
     "eslint-plugin-vue": "^9.9.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.33.0"
   }
 }
