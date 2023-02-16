@@ -1,6 +1,6 @@
 {
   "name": "@a10n2/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "personal eslint config",
   "main": "index.js",
   "type": "module",
