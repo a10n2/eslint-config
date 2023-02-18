@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     '@a10n2/eslint-config-base',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
@@ -16,6 +16,6 @@ module.exports = {
     ],
     '@typescript-eslint/no-duplicate-enum-values': 'error',
     // off
-    '@typescript-eslint/no-unsafe-argument': 'off',
+    // '@typescript-eslint/no-unsafe-argument': 'off',
   },
 }
