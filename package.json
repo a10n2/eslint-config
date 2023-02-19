@@ -24,6 +24,7 @@
   "devDependencies": {
     "chalk": "^5.2.0",
     "execa": "^7.0.0",
+    "minimist": "^1.2.8",
     "prompts": "^2.4.2"
   }
 }

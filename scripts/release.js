@@ -3,8 +3,12 @@ import path from 'node:path'
 import prompts from 'prompts'
 import { execa } from 'execa'
 import chalk from 'chalk'
+import minimist from 'minimist'
 
 const cwd = process.cwd()
+
+// skip git operation
+const { skipgit } = minimist(process.argv.slice(2))
 
 const info = (...args) => console.log(chalk.yellow(...args))
 const success = (...args) => console.log(chalk.green(...args))
@@ -99,8 +103,10 @@ async function main() {
   // update root package.json version
   updateVersion(path.resolve(cwd, 'package.json'), version)
 
-  // handle git
-  await handleGitOperation().catch(err => console.log(err))
+  if (!skipgit) {
+    // handle git
+    await handleGitOperation().catch(err => console.log(err))
+  }
 
   // handle publish package to npm
   const publishquene = pkgs.map(pkg =>
