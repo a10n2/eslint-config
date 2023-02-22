@@ -11,6 +11,14 @@ module.exports = {
       jsx: true,
     },
   },
+  settings: {
+    react: {
+      createClass: 'createReactClass',
+      pragma: 'React',
+      fragment: 'Fragment',
+      version: 'detect',
+    },
+  },
   rules: {
     // warn
     'react/jsx-closing-bracket-location': [2, 'tag-aligned'],
