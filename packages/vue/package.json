@@ -1,6 +1,6 @@
 {
   "name": "@a10n2/eslint-config-vue",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Esling config of Vue",
   "main": "index.js",
   "keywords": [
