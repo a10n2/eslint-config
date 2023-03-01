@@ -9,13 +9,12 @@ module.exports = {
   rules: {
     // warn
     '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-empty-function': 'warn',
     // error
     '@typescript-eslint/member-ordering': [
       'error',
       { default: ['signature', 'method', 'constructor', 'field'] },
     ],
     '@typescript-eslint/no-duplicate-enum-values': 'error',
-    // off
-    // '@typescript-eslint/no-unsafe-argument': 'off',
   },
 }
