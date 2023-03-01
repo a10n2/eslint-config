@@ -65,7 +65,7 @@ async function handleGitOperation() {
   await execa('git', ['tag', `v${newVersion}`], { cwd })
   success(`\n版本tag创建完毕，版本号为: v${newVersion}`)
   info('\n推送tag远端中 ...')
-  await execa('git', ['push', 'origin', '--tags'], { cwd })
+  await execa('git', ['push', 'origin', `v${newVersion}`], { cwd })
   success('\ntag推送远端完成')
 }
 
